@@ -7,28 +7,35 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 25f;
     private Rigidbody rb;
-    [SerializeField] private int score = 0;
-    [SerializeField] private int key = 0;
+
+    [SerializeField] private PlayerData playerData;
+    [SerializeField] private SoundLibrary sound;
+    [SerializeField] private AudioClip clip;
+
+    private AudioSource audioSource;
+
     public void AddScore()
     {
-        score = score + 1;
+        playerData.score = playerData.score + 1;
+        AudioSource.PlayClipAtPoint(sound.coin, transform.position);
     }
     public void AddKey()
     {
-        key = key + 1;
+        playerData.key = playerData.key + 1;
+        AudioSource.PlayClipAtPoint(sound.key, transform.position);
 
-        if( key == 3)
+        if (playerData.key == 3)
         {
             SceneManager.LoadScene(0);
         }
     }
     public int GetScore()
     {
-        return score;
+        return playerData.score;
     }
     public int GetKey()
     {
-        return key;
+        return playerData.key;
     }
 
     // Start is called before the first frame update

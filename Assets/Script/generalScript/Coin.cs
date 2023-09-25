@@ -10,10 +10,10 @@ public class Coin : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Get 500 bath");
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject, 0.5f);
             PlayerController player = GameObject.FindFirstObjectByType<PlayerController>();
-            player.AddScore ();
-            
+            player.AddScore();
+
         }
 
     }

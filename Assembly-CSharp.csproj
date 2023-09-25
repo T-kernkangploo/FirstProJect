@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D7CFB604-9DA0-30B3-4DA2-CCCFEC6D1282}</ProjectGuid>
+    <ProjectGuid>{E2448801-9263-4F38-C328-CE15C869FAA0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,11 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\generalScript\Key.cs" />
+    <Compile Include="Assets\Script\generalScript\PauseGame.cs" />
     <Compile Include="Assets\Script\generalScript\MenuScript.cs" />
+    <Compile Include="Assets\Script\ScriptableS\SoundLibrary.cs" />
     <Compile Include="Assets\Script\camaraScript\ScoreText.cs" />
     <Compile Include="Assets\Script\generalScript\PlayerController.cs" />
     <Compile Include="Assets\Script\generalScript\Sound.cs" />
     <Compile Include="Assets\Script\generalScript\Coin.cs" />
+    <Compile Include="Assets\Script\ScriptableS\PlayerData.cs" />
     <Compile Include="Assets\Script\generalScript\Goal.cs" />
     <Compile Include="Assets\Script\camaraScript\KeyText.cs" />
     <Compile Include="Assets\Script\generalScript\Dead.cs" />
